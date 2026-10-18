@@ -51,12 +51,10 @@ const productos = [
     precio: 3, 
     imagen: "productos/lapiz-negro.jpg" },
 
-  { nombre: "Lapiz negro", 
-    descripcion: "Tenemos para vender por unidad y paquetes", 
-    precio: 3, 
-    imagen: "productos/lapiz-negro.jpg" },
-
-    
+  { nombre: "Marcadores FaberCastell", 
+    descripcion: "Una docena de los mejores marcadores", 
+    precio: 20, 
+    imagen: "productos/marcadores.webp" },    
 
   { nombre: "Cartulinas", 
     descripcion: "Se tiene de todo los colores.", 
