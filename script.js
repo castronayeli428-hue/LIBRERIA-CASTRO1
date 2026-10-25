@@ -65,6 +65,13 @@ const productos = [
     precio: 4,
     imagen: "productos/cartulinas.webp" },
 
+
+  { nombre: "Lapiceros neon",
+    marca: "Benma",
+    descripcion: "De calidad.",
+    precio: 20,
+    imagen: "productos/lapiceros-neon-.jpg" },
+
     { nombre: "Boligrafos",
     marca: "faber castell",
     descripcion: "Se tiene de todo los colores.",
