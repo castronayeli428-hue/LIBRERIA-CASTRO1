@@ -75,7 +75,11 @@
     <!-- PRODUCTOS -->
     <section id="productos" class="seccion">
       <h2 class="titulo-seccion">Nuestros productos</h2>
-      <input id="buscador" class="buscador" type="search" placeholder="Buscar productos..." aria-label="Buscar productos">
+      <div class="filtros">
+        <input id="buscador" class="buscador" type="search" placeholder="Buscar productos..." aria-label="Buscar productos">
+        <input id="buscador-marca" class="buscador" type="search" placeholder="Filtrar por marca..." aria-label="Filtrar por marca">
+      </div>
+
       <div id="lista-productos" class="cuadricula"></div>
       <p id="sin-resultados" class="sin-resultados" hidden>No encontramos productos con esa búsqueda. Prueba con otra palabra.</p>
     </section>

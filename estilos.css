@@ -362,6 +362,18 @@ a {
   background: var(--lila-oscuro); 
 }
 
+
+
+.filtros {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.filtros .buscador {
+  flex: 1;
+  min-width: 200px;
+}
+
 /* ===== BENEFICIOS ===== */
 .cuadricula-beneficios { 
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

@@ -12,54 +12,64 @@ const CONFIGURACION = {
    2. TUS PRODUCTOS
    Para agregar uno nuevo, copia una línea completa
    (de { a },) y pégala debajo. Cambia los datos.
+   - marca: la marca del producto (déjala "" si no tiene)
    - imagen: ruta de la foto, por ejemplo "imagenes/cuaderno.jpg"
    - precio: solo el número, sin símbolo
    ===================================================== */
 const productos = [
-  { nombre: "Cuaderno tamaño oficio", 
-    descripcion: "Cuaderno de 100 hojas, tapa dura, anillado y diferentes cuadriculas.", 
-    precio: 20, 
+  { nombre: "Cuaderno tamaño oficio",
+    marca: "",
+    descripcion: "Cuaderno de 100 hojas, tapa dura, anillado y diferentes cuadriculas.",
+    precio: 20,
     imagen: "productos/cuadernos.jpg" },
 
-  { nombre: "Cuaderno tamaño carta", 
-    descripcion: "Cuaderno de 100 hojas, tapa dura, anillado y diferentes cuadriculas.", 
-    precio: 20, 
+  { nombre: "Cuaderno tamaño carta",
+    marca: "",
+    descripcion: "Cuaderno de 100 hojas, tapa dura, anillado y diferentes cuadriculas.",
+    precio: 20,
     imagen: "productos/cuaderno-oficio.jpg" },
 
-  { nombre: "Boligrafos Pilot", 
-    descripcion: "Lo mejor para escribir con suavidad y precisión.", 
-    precio: 8, 
+  { nombre: "Boligrafos Pilot",
+    marca: "Pilot",
+    descripcion: "Lo mejor para escribir con suavidad y precisión.",
+    precio: 8,
     imagen: "productos/bolis.jpg" },
 
-  { nombre: "Boligrafos Monami", 
-    descripcion: "Los mejores bolígrafos para escribir con suavidad y precisión.", 
-    precio: 2.50, 
+  { nombre: "Boligrafos Monami",
+    marca: "Monami",
+    descripcion: "Los mejores bolígrafos para escribir con suavidad y precisión.",
+    precio: 2.50,
     imagen: "productos/bolis1.jpg" },
 
-  { nombre: "Hojas de carpeta", 
-    descripcion: "Tenemos en todas las cuadriculas: menudo, intermedio y grande", 
-    precio: 40, 
+  { nombre: "Hojas de carpeta",
+    marca: "",
+    descripcion: "Tenemos en todas las cuadriculas: menudo, intermedio y grande",
+    precio: 40,
     imagen: "productos/hojas-carpeta.jpg" },
 
-  { nombre: "Lapiz rojo (Faber Castell)", 
-    descripcion: "Tenemos para vender por unidad y paquetes", 
-    precio: 3, 
+  { nombre: "Lapiz rojo",
+    marca: "Faber Castell",
+    descripcion: "Tenemos para vender por unidad y paquetes",
+    precio: 3,
     imagen: "productos/lapiz-rojo.jpg" },
 
-  { nombre: "Lapiz negro", 
-    descripcion: "Tenemos para vender por unidad y paquetes", 
-    precio: 3, 
+  { nombre: "Lapiz negro",
+    marca: "",
+    descripcion: "Tenemos para vender por unidad y paquetes",
+    precio: 3,
     imagen: "productos/lapiz-negro.jpg" },
 
-  { nombre: "Marcadores FaberCastell", 
-    descripcion: "Una docena de los mejores marcadores", 
-    precio: 20, 
-    imagen: "productos/marcadores.webp" },    
+  { nombre: "Cartulinas",
+    marca: "",
+    descripcion: "Se tiene de todo los colores.",
+    precio: 4,
+    imagen: "productos/cartulinas.webp" },
 
-  { nombre: "Cartulinas", 
-    descripcion: "Se tiene de todo los colores.", 
-    precio: 4, 
-    imagen: "productos/cartulinas.webp" }
+    { nombre: "Boligrafos",
+    marca: "faber castell",
+    descripcion: "Se tiene de todo los colores.",
+    precio: 4,
+    imagen: "productos/lapiceros-faver-.jpg" }
 ];
 
 /* =====================================================
@@ -67,52 +77,52 @@ const productos = [
    Igual que los productos, pero con "autor".
    ===================================================== */
 const libros = [
-  { nombre: "Cara sucia", 
-    autor: "José Camarlinghi", 
-    descripcion: "Es una obra de la literatura boliviana que refleja la vida difícil de los niños de la calle", 
-    precio: 100, 
+  { nombre: "Cara sucia",
+    autor: "José Camarlinghi",
+    descripcion: "Es una obra de la literatura boliviana que refleja la vida difícil de los niños de la calle",
+    precio: 100,
     imagen: "libro/cara.jpg" },
 
-  { nombre: "Tempestad en la cordillera", 
-    autor: "Walter Guevara Arze", 
-    descripcion: "Una obra que refleja las dificultades de la vida en las montañas bolivianas.", 
-    precio: 15, 
+  { nombre: "Tempestad en la cordillera",
+    autor: "Walter Guevara Arze",
+    descripcion: "Una obra que refleja las dificultades de la vida en las montañas bolivianas.",
+    precio: 15,
     imagen: "libro/tempestad.jpg" },
 
-  { nombre: "Sangre de campeón", 
-    autor: "Carlos Cuauhtémoc Sánchez", 
-    descripcion: "Novela que enseña valores como el respeto, la responsabilidad, la honestidad y la perseverancia.", 
-    precio: 10, 
+  { nombre: "Sangre de campeón",
+    autor: "Carlos Cuauhtémoc Sánchez",
+    descripcion: "Novela que enseña valores como el respeto, la responsabilidad, la honestidad y la perseverancia.",
+    precio: 10,
     imagen: "libro/campeon.webp" },
 
-  { nombre: "¿Quien se ha llevado mi queso?", 
-    autor: "Spencer Johnson", 
-    descripcion: "Una fábula sencilla sobre el cambio: dos ratones y dos personitas buscan queso en un laberinto", 
-    precio: 10, 
+  { nombre: "¿Quien se ha llevado mi queso?",
+    autor: "Spencer Johnson",
+    descripcion: "Una fábula sencilla sobre el cambio: dos ratones y dos personitas buscan queso en un laberinto",
+    precio: 10,
     imagen: "libro/queso.jpg" },
 
-  { nombre: "El velero de cristal", 
-    autor: "Jose Mauro de Vasconcelos", 
-    descripcion: "Es una novela breve y tierna sobre un niño que, a través de la imaginación, emprende un viaje al país de los sueños.", 
-    precio: 10, 
+  { nombre: "El velero de cristal",
+    autor: "Jose Mauro de Vasconcelos",
+    descripcion: "Es una novela breve y tierna sobre un niño que, a través de la imaginación, emprende un viaje al país de los sueños.",
+    precio: 10,
     imagen: "libro/velero.jpg" },
 
-  { nombre: "Quiubole", 
-    autor: "Gaby Vargas & Yordi Rosado", 
-    descripcion: "Es una guía para adolescentes que responde, con lenguaje juvenil y divertido, las dudas más comunes de esa etapa.", 
-    precio: 10, 
-    imagen: "libro/quiubole.jpg" },    
+  { nombre: "Quiubole",
+    autor: "Gaby Vargas & Yordi Rosado",
+    descripcion: "Es una guía para adolescentes que responde, con lenguaje juvenil y divertido, las dudas más comunes de esa etapa.",
+    precio: 10,
+    imagen: "libro/quiubole.jpg" },
 
-  { nombre: "La Chaskañawi", 
-    autor: "Carlos Medinaceli", 
-    descripcion: "Es una novela boliviana que cuenta una historia de amor entre un joven estudiante y una cholita", 
-    precio: 10, 
+  { nombre: "La Chaskañawi",
+    autor: "Carlos Medinaceli",
+    descripcion: "Es una novela boliviana que cuenta una historia de amor entre un joven estudiante y una cholita",
+    precio: 10,
     imagen: "libro/chasca.jpg" },
 
-    { nombre: "Borracho estaba, pero no me acuerdo", 
-    autor: "Victor Hugo Viscarra", 
-    descripcion: "Es un libro de memorias de Viscarra, escritor paceño (1958-2006). Mezcla crónica, cuento, descripción antropológica y anécdota.", 
-    precio: 10, 
+  { nombre: "Borracho estaba, pero no me acuerdo",
+    autor: "Victor Hugo Viscarra",
+    descripcion: "Es un libro de memorias de Viscarra, escritor paceño (1958-2006). Mezcla crónica, cuento, descripción antropológica y anécdota.",
+    precio: 10,
     imagen: "libro/borracho.jpg" }
 ];
 
@@ -139,6 +149,7 @@ function crearTarjeta(item, esLibro) {
     '<div class="tarjeta-cuerpo">' +
       '<h3 class="tarjeta-nombre">' + escapar(item.nombre) + "</h3>" +
       (esLibro ? '<p class="tarjeta-autor">' + escapar(item.autor) + "</p>" : "") +
+      (!esLibro && item.marca ? '<p class="tarjeta-autor">' + escapar(item.marca) + "</p>" : "") +
       '<p class="tarjeta-descripcion">' + escapar(item.descripcion) + "</p>" +
       '<div class="tarjeta-compra"><span class="tarjeta-precio">' + dinero(item.precio) + '</span>' +
       '<button class="boton boton-comprar" type="button">Comprar</button></div>' +
@@ -158,25 +169,33 @@ function normalizar(texto) {
     .trim();
 }
 
-function filtrar(lista, texto) {
+// Filtra por texto (nombre, autor, marca, descripción) y, si se indica, por marca
+function filtrar(lista, texto, marca) {
   const busqueda = normalizar(texto);
-  return lista.filter((item) =>
-    normalizar(item.nombre + " " + (item.autor || "") + " " + item.descripcion).includes(busqueda)
-  );
+  const busquedaMarca = normalizar(marca);
+  return lista.filter((item) => {
+    const coincideTexto = normalizar(
+      item.nombre + " " + (item.autor || "") + " " + (item.marca || "") + " " + item.descripcion
+    ).includes(busqueda);
+    const coincideMarca = normalizar(item.marca).includes(busquedaMarca);
+    return coincideTexto && coincideMarca;
+  });
 }
 
-function mostrarProductos(texto) {
+function mostrarProductos() {
   const contenedor = $("lista-productos");
   contenedor.innerHTML = "";
-  const filtrados = filtrar(productos, texto);
+  const texto = $("buscador").value;
+  const marca = $("buscador-marca").value;
+  const filtrados = filtrar(productos, texto, marca);
   filtrados.forEach((p) => contenedor.appendChild(crearTarjeta(p, false)));
   $("sin-resultados").hidden = filtrados.length > 0;
 }
 
-function mostrarLibros(texto) {
+function mostrarLibros() {
   const contenedor = $("lista-libros");
   contenedor.innerHTML = "";
-  const filtrados = filtrar(libros, texto);
+  const filtrados = filtrar(libros, $("buscador").value, "");
   filtrados.forEach((l) => contenedor.appendChild(crearTarjeta(l, true)));
   $("sin-resultados-libros").hidden = filtrados.length > 0;
 }
@@ -281,15 +300,21 @@ $("fondo-oscuro").addEventListener("click", cerrarCarrito);
 $("boton-pedir").addEventListener("click", abrirFormulario);
 $("cerrar-formulario").addEventListener("click", cerrarFormulario);
 $("formulario-pedido").addEventListener("submit", enviarPedido);
-$("buscador").addEventListener("input", (e) => {
-  mostrarProductos(e.target.value);
-  mostrarLibros(e.target.value);
+
+// Buscador principal: filtra productos y libros
+$("buscador").addEventListener("input", () => {
+  mostrarProductos();
+  mostrarLibros();
 });
+
+// Buscador por marca: filtra solo productos
+$("buscador-marca").addEventListener("input", mostrarProductos);
+
 document.addEventListener("keydown", (e) => { if (e.key === "Escape") { cerrarFormulario(); cerrarCarrito(); } });
 
 $("boton-contacto").href = "https://wa.me/" + CONFIGURACION.whatsapp + "?text=" + encodeURIComponent("Hola " + CONFIGURACION.tienda + ", quisiera más información.");
 $("anio").textContent = new Date().getFullYear();
 
-mostrarProductos("");
-mostrarLibros("");
+mostrarProductos();
+mostrarLibros();
 dibujarCarrito();
